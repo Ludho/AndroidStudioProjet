@@ -1,0 +1,33 @@
+CREATE TABLE IF NOT EXISTS Question (question,reponse1,reponse2,reponse3,bonneReponse,theme);
+Insert into QUESTION VALUES ("Les pommes qu’elle a … sont trop mûres.","acheté","achetée","achetés","achetées","francais");
+Insert into QUESTION VALUES ("Dans les chambres d’hôtel, il y a souvent des …","coffre-fort","coffre-forts","coffres-fort","coffres-forts","francais");
+Insert into QUESTION VALUES ("Elle a acheté des rideaux …","marrons","turquoises","oranges","bleus","francais");
+Insert into QUESTION VALUES ("J’ai des cheveux …","châtain clairs","châtains clairs","châtains clair","châtain clair","francais");
+Insert into QUESTION VALUES ("Je ne pense pas qu’il … malade.","est","a","ait","soit","francais");
+Insert into QUESTION VALUES ("La plupart des voitures …","sont gris.","est grises.","est grise.","sont grises.","francais");
+Insert into QUESTION VALUES ("Quel nombre est mal écrit ?","sept cents millions","Six mille un","Huit cent vingt","Quatre-vingts-sept","francais");
+Insert into QUESTION VALUES ("Quelle forme est correcte ?","il est absent","il sera absent","il soit absent","il serait absent","francais");
+Insert into QUESTION VALUES ("Je vous … ce paquet de la part de Sophie.","emmène","emporte","amène","apporte","francais");
+Insert into QUESTION VALUES ("J’ai arrêté d’apprendre …, c’était trop difficile.","l’Alemand","l’Allemand","l’alemand","l’allemand","francais");
+
+Insert into QUESTION VALUES ("Parmi ces villes, laquelle se situe le plus au Nord de la France ?","Marseille","Grenoble","Bordeaux","Lyon","geographie");
+Insert into QUESTION VALUES ("Dans quelle région se trouve le Mont Saint-Michel ?","En Bretagne","Dans les Pays de La Loire","En Île de France","En Normandie","geographie");
+Insert into QUESTION VALUES ("Quel département est le moins peuplé de France ?","La Creuse","Le Gers","Le Cher","La Lozère","geographie");
+Insert into QUESTION VALUES ("Quel est le fleuve le plus long de France ?","La Seine","Le Rhône","La Moselle","La Loire","geographie");
+Insert into QUESTION VALUES ("Depuis 2016, combien y a-t-il de régions en France métropolitaine ?","5","17","24","13","geographie");
+Insert into QUESTION VALUES ("Lequel de ces sommets est le plus élevé ?","Le mont d’Or","Le mont Noir","Le mont Joli","Le mont Blanc","geographie");
+Insert into QUESTION VALUES ("Combien de Pays ont une frontière avec la France métropolitaine ? ","6","5","7","8","geographie");
+Insert into QUESTION VALUES ("Laquelle de ces îles n’est pas française ?","St-Pierre et Miquelon","La Guadeloupe","La Réunion","La Barbade","geographie");
+Insert into QUESTION VALUES ("Combien de mers et d’océans entourent la France métropolitaine?","3","5","6","4","geographie");
+Insert into QUESTION VALUES ("En 2018, combien y a-t-il d’habitants en France ?","6.9 millions","32 millions","85,4 millions","67.2 millions","geographie");
+
+Insert into QUESTION VALUES ("Quand l’école est-elle devenue gratuite, laïque et obligatoire en primaire?","2002","1914","1982","1882","histoire");
+Insert into QUESTION VALUES ("A quelle occasion la tour Eiffel a-t-elle été construite?","donner un symbole à la France","montrer la puissance","remercier le président","une exposition universelle","histoire");
+Insert into QUESTION VALUES ("Quelles sont les dates de la première guerre mondiale?","1924-1928","1939-1945","1789-1815","1914-1918","histoire");
+Insert into QUESTION VALUES ("En quelle année les femmes ont-elles eu le droit de vote?","en 1945","en 1918","en 2000","en 1944","histoire");
+Insert into QUESTION VALUES ("Pendant quelle guerre le maréchal Pétain est-il devenu important pour la France?","Pendant la révolution","Seconde Guerre Mondiale","Guerre franco-anglaise","Première Guerre Mondiale","histoire");
+Insert into QUESTION VALUES ("En quelle année le mur de Berlin est-il détruit?","en 1962","en 1991","en 1945","en 1989","histoire");
+Insert into QUESTION VALUES ("Qui est Winston Churchill?","un homme politique français","un homme politique americain","un homme politique allemand","un homme politique britannique","histoire");
+Insert into QUESTION VALUES ("Qua écrit Victor Hugo?","Le malade imaginaire","Les fables de la Fontaine","L’encyclopédie","Les misérables","histoire");
+Insert into QUESTION VALUES ("En quelle année finit la seconde Guerre Mondiale?","en 1991","en 1918","en 1951","en 1945","histoire");
+Insert into QUESTION VALUES ("Quel château symbolise la grandeur de Louis XIV?","Saint Germain","Le Louvre","Lyon","Versailles","histoire");

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context="Maths_Activities.module3.maths_module3_home"
+    android:padding="15dp"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/maths_module2_autre_exercice"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:textColor="@color/lightblack"
+        android:text="CHOISIR UN AUTRE EXERCICE"
+        android:onClick="others_exercices"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="10dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="200dp"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:id="@+id/maths_module3_facile"
+                        android:layout_margin="10dp"
+                        android:textSize="20dp"
+                        android:text="Facile"
+                        android:textColor="@color/lightblack"
+                        android:layout_height="80dp">
+                    </Button>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="200dp"
+                        android:layout_margin="10dp"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:text="NORMAL"
+                        android:id="@+id/maths_module3_normale"
+                        android:textSize="20dp"
+                        android:textColor="@color/lightblack"
+                        android:layout_height="80dp">
+                    </Button>
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/maths_module3_lock_normal"
+                        android:translationZ="10dp"
+                        android:src="@drawable/lock">
+                    </ImageView>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="200dp"
+                        android:layout_margin="10dp"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:text="DIFFICILE"
+                        android:id="@+id/maths_module3_difficile"
+                        android:textSize="20dp"
+                        android:textColor="@color/lightblack"
+                        android:layout_height="80dp">
+                    </Button>
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/maths_module3_lock_hard"
+                        android:translationZ="10dp"
+                        android:src="@drawable/lock">
+                    </ImageView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/maths_module3_valider_choix"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:textColor="@color/lightblack"
+                android:text="Commencer !!"
+                android:layout_alignParentLeft="true"
+                android:onClick="maths_module3_valider_commencer"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 minute"
+                    android:textColor="@color/white"
+                    android:layout_alignLeft="@+id/maths_module3_timer">
+                </TextView>
+                <ToggleButton
+                    android:id="@+id/maths_module3_timer"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/lightblack"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_height="wrap_content"
+                    >
+                </ToggleButton>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

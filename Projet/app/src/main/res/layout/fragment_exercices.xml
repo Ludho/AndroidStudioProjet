@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="exercices"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:text="Maths"
+            android:id="@+id/matiere_choisis"
+            android:textSize="30dp"
+            android:gravity="center_horizontal">
+        </TextView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Table de Multiplication"
+            android:layout_marginHorizontal="30dp"
+            android:paddingVertical="30dp"
+            android:textSize="20dp"
+            android:id="@+id/maths_module1">
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Addition"
+            android:layout_marginHorizontal="30dp"
+            android:textSize="20dp"
+            android:paddingVertical="30dp"
+            android:id="@+id/maths_module2">
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QUIZZ"
+            android:layout_marginHorizontal="30dp"
+            android:textSize="20dp"
+            android:paddingVertical="30dp"
+            android:id="@+id/culture_module1">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Multiplication"
+            android:layout_marginHorizontal="30dp"
+            android:textSize="20dp"
+            android:paddingVertical="30dp"
+            android:id="@+id/maths_module3">
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correspondance"
+            android:layout_marginHorizontal="30dp"
+            android:textSize="20dp"
+            android:paddingVertical="30dp"
+            android:id="@+id/Divers_1">
+        </Button>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

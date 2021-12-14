@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projet">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Projet"
+        android:name=".model.App">
+        <activity android:name=".login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.projet.MainActivity" />
+        <activity android:name="com.example.projet.register" />
+        <activity android:name="com.example.projet.Maths_Activities.module1.maths_module1_home" />
+        <activity android:name="com.example.projet.Maths_Activities.module1.maths_module1_loser" />
+        <activity android:name="com.example.projet.Maths_Activities.module1.maths_module1_table" />
+        <activity android:name="com.example.projet.Maths_Activities.module1.maths_module1_winner" />
+        <activity android:name="com.example.projet.Maths_Activities.module2.maths_module2_home" />
+        <activity android:name="com.example.projet.Maths_Activities.module2.maths_module2_calcul" />
+        <activity android:name="com.example.projet.Maths_Activities.module2.maths_module2_winner" />
+        <activity android:name="com.example.projet.Maths_Activities.module2.maths_module2_loser" />
+        <activity android:name="com.example.projet.Maths_Activities.module2.maths_module2_calcul_timer" />
+        <activity android:name="com.example.projet.Maths_Activities.module2.maths_module2_end" />
+        <activity android:name="com.example.projet.Culture_Activities.module1.culture_module1_home" />
+        <activity android:name="com.example.projet.Culture_Activities.module1.culture_module1_quizz" />
+        <activity android:name="com.example.projet.Culture_Activities.module1.culture_module1_end" />
+        <activity android:name="com.example.projet.Maths_Activities.module3.maths_module3_home" />
+        <activity android:name="com.example.projet.Maths_Activities.module3.maths_module3_calcul" />
+        <activity android:name="com.example.projet.Maths_Activities.module3.maths_module3_winner" />
+        <activity android:name="com.example.projet.Maths_Activities.module3.maths_module3_loser" />
+        <activity android:name="com.example.projet.Maths_Activities.module3.maths_module3_calcul_timer" />
+        <activity android:name="com.example.projet.Maths_Activities.module3.maths_module3_end" />
+        <activity android:name="com.example.projet.score" />
+        <activity android:name="com.example.projet.Diverse_Activities.memory_end" />
+        <activity android:name="com.example.projet.Diverse_Activities.memory_game" />
+        <activity android:name="com.example.projet.Diverse_Activities.memory_home" />
+    </application>
+
+</manifest>

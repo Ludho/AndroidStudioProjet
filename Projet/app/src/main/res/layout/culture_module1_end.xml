@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.projet.Culture_Activities.module1.culture_module1_end"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@color/gray">
+
+        <Button
+            android:id="@+id/culture_module1_autre_exercice"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/lightblack"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="CHOISIR UN AUTRE EXERCICE"
+            android:onClick="culture_module1_others_exercices"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:id="@+id/culture_module1_winner_vue">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="FELICITATION !!"
+                android:textSize="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/culture_module1_nb_error_timer"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/culture_module1_score"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="30dp"/>
+            <Button
+                android:id="@+id/culture_module1_rejouer"
+                android:layout_height="80dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="150dp"
+                android:textSize="20dp"
+                android:textColor="@color/lightblack"
+                android:text="Rejouer"
+                android:onClick="culture_module1_replay"/>
+        </LinearLayout>
+</RelativeLayout>

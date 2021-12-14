@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".Culture_Activities.module1.culture_module1_home"
+    android:padding="15dp">
+    <Button
+        android:id="@+id/culture_module1_autre_exercice"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:textColor="@color/lightblack"
+        android:text="CHOISIR UN AUTRE EXERCICE"
+        android:onClick="culture_module1_others_exercices"/>
+
+        <TextView
+            android:id="@+id/Choose_your_theme"
+            android:layout_below="@+id/culture_module1_autre_exercice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:text="Choisis un thème"
+            android:textAlignment="center"
+            android:textSize="30dp"></TextView>
+
+        <Button
+            android:id="@+id/culture_module1_Histoire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Choose_your_theme"
+            android:layout_marginHorizontal="50dp"
+            android:textColor="@color/lightblack"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:onClick="BouttonHistoire"
+            android:paddingVertical="15dp"
+            android:text="Histoire"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/culture_module1_Francais"
+            android:layout_width="match_parent"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/culture_module1_Histoire"
+            android:textColor="@color/lightblack"
+            android:layout_marginHorizontal="50dp"
+            android:onClick="BouttonFrancais"
+            android:paddingVertical="15dp"
+            android:text="Français"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/culture_module1_Geographie"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:textColor="@color/lightblack"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/culture_module1_Francais"
+            android:layout_marginHorizontal="50dp"
+            android:onClick="BouttonGeographie"
+            android:paddingVertical="20dp"
+            android:text="Géographie"
+            android:textSize="25dp" />
+
+</RelativeLayout>

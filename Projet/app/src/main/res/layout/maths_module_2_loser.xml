@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/gray"
+    android:layout_height="match_parent"
+    tools:context="com.example.projet.Maths_Activities.module2.maths_module2_loser"
+    android:orientation="vertical"
+    android:padding="15dp">
+    <Button
+        android:id="@+id/maths_module2_autre_exercice"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:text="CHOISIR UN AUTRE EXERCICE"
+        android:onClick="maths_module2_others_exercices"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Dommage !"
+            android:textSize="50dp"/>
+        <TextView
+            android:id="@+id/maths_module2_nb_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="" />
+        <Button
+            android:id="@+id/maths_module2_corriger"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="CORRIGER MES REPONSES"
+            android:textColor="@color/lightblack"
+            android:onClick="maths_module2_Correct"/>
+        <Button
+            android:id="@+id/maths_module2_choix_table"
+            android:layout_height="80dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="150dp"
+            android:textColor="@color/lightblack"
+            android:text="Rejouer"
+            android:onClick="maths_module2_change"/>
+
+    </LinearLayout>
+</RelativeLayout>

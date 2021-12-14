@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context="com.example.projet.Maths_Activities.module3.maths_module3_winner"
+    android:orientation="vertical"
+    android:padding="15dp">
+    <Button
+        android:id="@+id/maths_module1_autre_exercice"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/lightblack"
+        android:layout_alignParentRight="true"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:text="CHOISIR UN AUTRE EXERCICE"
+        android:onClick="maths_module3_others_exercices"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/maths_module3_winner_vue">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="FELICITATION!!"
+            android:textSize="50dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="Aucune erreur"
+            android:textSize="30dp"/>
+        <Button
+            android:id="@+id/maths_module1_autre_table"
+            android:layout_height="80dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="150dp"
+            android:textColor="@color/lightblack"
+            android:textSize="20dp"
+            android:text="Rejouer"
+            android:onClick="maths_module3_replay"/>
+
+    </LinearLayout>
+</RelativeLayout>

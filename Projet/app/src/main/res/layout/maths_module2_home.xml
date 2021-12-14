@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context="Maths_Activities.module2.maths_module2_home"
+    android:padding="15dp"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/maths_module2_autre_exercice"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:textColor="@color/lightblack"
+        android:text="CHOISIR UN AUTRE EXERCICE"
+        android:onClick="maths_module2_others_exercices"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/maths_module2_int1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="?android:attr/listChoiceIndicatorMultiple"
+                android:button="@null"
+                android:onClick="onCheckboxClicked" />
+
+            <CheckBox
+                android:id="@+id/maths_module2_int2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="?android:attr/listChoiceIndicatorMultiple"
+                android:button="@null"
+                android:onClick="onCheckboxClicked" />
+
+            <CheckBox
+                android:id="@+id/maths_module2_int3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="?android:attr/listChoiceIndicatorMultiple"
+                android:button="@null"
+                android:checked="true"
+                android:onClick="onCheckboxClicked" />
+
+            <NumberPicker
+                android:id="@+id/maths_module2_choix_operand"
+                android:layout_width="wrap_content"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:layout_height="wrap_content"></NumberPicker>
+
+            <CheckBox
+                android:id="@+id/maths_module2_int4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="?android:attr/listChoiceIndicatorMultiple"
+                android:button="@null"
+                android:onClick="onCheckboxClicked" />
+
+            <CheckBox
+                android:id="@+id/maths_module2_int5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="?android:attr/listChoiceIndicatorMultiple"
+                android:button="@null"
+                android:onClick="onCheckboxClicked" />
+
+            <CheckBox
+                android:id="@+id/maths_module2_int6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="?android:attr/listChoiceIndicatorMultiple"
+                android:button="@null"
+                android:checked="true"
+                android:onClick="onCheckboxClicked" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/maths_module1_valider_choix"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:textColor="@color/lightblack"
+                android:text="Commencer !!"
+                android:layout_alignParentLeft="true"
+                android:onClick="maths_module2_valider_commencer"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 minute"
+                    android:textColor="@color/white"
+                    android:layout_alignLeft="@+id/maths_module2_timer">
+                </TextView>
+                <ToggleButton
+                    android:id="@+id/maths_module2_timer"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/lightblack"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_height="wrap_content"
+                    >
+                </ToggleButton>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

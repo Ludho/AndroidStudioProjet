@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.projet.Maths_Activities.module1.maths_module1_winner"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@color/gray">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/maths_module1_autre_exercice"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/lightblack"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="CHOISIR UN AUTRE EXERCICE"
+                    android:onClick="maths_module1_others_exercices"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtfelicitation"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:text="FELICITATION!!"
+                            android:textSize="50dp"/>
+                        <TextView
+                            android:id="@+id/exercice5_nb_erreur"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_below="@+id/txtfelicitation"
+                            android:text="" />
+                        <Button
+                            android:id="@+id/maths_module1_autre_table"
+                            android:layout_height="80dp"
+                            android:layout_width="150dp"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:textSize="20dp"
+                            android:layout_below="@+id/exercice5_nb_erreur"
+                            android:text="Rejouer"
+                            android:textColor="@color/lightblack"
+                            android:onClick="maths_module1_others_table"/>
+                </LinearLayout>
+
+        </RelativeLayout>
+
+</LinearLayout>
